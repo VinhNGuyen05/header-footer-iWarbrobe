@@ -1,0 +1,16 @@
+/* Show it is fixed to the top */
+body {
+    padding-top: 4.5rem;
+}
+
+.title__background-color {
+    color: #fff;
+}
+
+.block__background--color {
+    background: #152534;
+}
+
+.img__margin {
+    margin-right: 1rem;
+}
