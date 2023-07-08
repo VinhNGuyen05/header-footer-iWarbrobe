@@ -25,19 +25,15 @@
                     font-size: 3.5rem;
                 }
             }
-
-            .block__backgorund{
-                background: #152534
-            }
-
         </style>
-        <link href="editProfile.css" rel="stylesheet" />
+        <!-- <link href="editProfile.css" rel="stylesheet" /> -->
     </head>
 
     <body>
         <!-- Header -->
         <nav
-            class="navbar navbar-expand-md fixed-top px-5 block__backgorund"
+            class="navbar navbar-expand-md fixed-top px-5"
+            style="background: #152534"
         >
             <div class="container-fluid d-flex">
                 <div>
@@ -52,7 +48,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <h3 class="text-light">Seller Profile</h3>
+                        <h3 style="color: #fff">Your Profile</h3>
                     </div>
                 </div>
                 <div
@@ -95,9 +91,9 @@
                             class="dropdown-menu text-small shadow dropdown-menu-lg-end"
                         >
                             <li>
-                                <a class="dropdown-item" href="#">
-                                    <b>Mobina Mirbagheri</b>
-                                </a>
+                                <a class="dropdown-item" href="#"
+                                    >Mobina Mirbagheri</a
+                                >
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">Settings</a>
@@ -117,11 +113,9 @@
 
         <!-- Content -->
         <main class="container">
-            <div class="p-sm-5">
-                <!-- <div class="d-flex flex-row">
-                    <div
-                        class="d-flex flex-column flex-shrink-0 p-3 text-dark text-center"
-                    >
+            <div class="pt-5 pb-5 rounded">
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 text-dark text-center">
                         <img
                             src="/assets/img/avatar.png"
                             alt=""
@@ -130,110 +124,138 @@
                             class="rounded-circle me-2"
                         />
                     </div>
-                </div> -->
-                <div class="d-flex flex-column">
-                    <!-- <div class="d-flex flex-column px-5 text-dark"> -->
-                    <h3 class="mb-5">Edit Profile for Seller</h3>
-                    <form class="row">
-                        <div class="col">
-                            <div class="mb-lg-3">
-                                <label class="mb-lg-1" for="brandName"
-                                    >Your wardrobe's name</label
+                </div>
+                <div class="d-flex flex-row">
+                    <div
+                        class="d-flex flex-column flex-shrink-0 p-3 text-dark mb-5"
+                        style="border-right: 2px solid #e8eaee66"
+                    >
+                        <ul class="nav nav-pills flex-column mb-5">
+                            <li class="nav-item mb-4">
+                                <a
+                                    href="user.html"
+                                    class="nav-link text-dark"
+                                    aria-current="page"
                                 >
-                                <input
-                                    class="form-control w-100"
-                                    type="text"
-                                    name="brandName"
-                                    placeholder="Enter Value"
-                                    value=""
-                                    required
-                                />
-                            </div>
-                            <div class="mb-lg-3">
-                                <label class="mb-lg-1" for="dob"
-                                    >Date of birth</label
+                                    Edit Profile
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a
+                                    href="notifications.html"
+                                    class="nav-link text-dark"
                                 >
-                                <input
-                                    class="form-control w-100"
-                                    type="date"
-                                    name="dob"
-                                    value=""
-                                    placeholder="Enter Value"
-                                    required
-                                />
-                            </div>
-                            <div class="mb-lg-3">
-                                <label class="mb-lg-1" for="idCode"
-                                    >Identification Code</label
+                                    Notifications
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="plan.html" class="nav-link text-dark">
+                                    Choose Plan
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a
+                                    href="security.html"
+                                    class="nav-link text-dark"
                                 >
-                                <input
-                                    class="form-control w-100"
-                                    type="number"
-                                    name="idCode"
-                                    placeholder="Enter Value"
-                                    value=""
-                                    required
-                                />
-                            </div>
+                                    Password & Security
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-fluid d-flex flex-column px-5 text-dark">
+                        <h3 class="mb-5">Edit Profile</h3>
+                        <div>
+                            <h5>Personal</h5>
+                            <form class="row">
+                                <div class="col">
+                                    <div class="row mb-lg-3">
+                                        <div class="col-md-6">
+                                            <label class="mb-lg-1" for="brandName">First Name</label>
+                                            <input
+                                                class="form-control w-100"
+                                                type="text"
+                                                name="brandName"
+                                                placeholder="Enter Value"
+                                                value=""
+                                                required
+                                            />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="mb-lg-1" for="brandName">SubName</label>
+                                            <input
+                                                class="form-control w-100"
+                                                type="text"
+                                                name="brandName"
+                                                placeholder="Enter Value"
+                                                value=""
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="mb-lg-3">
+                                        <label class="mb-lg-1" for="dob">Date of birth</label>
+                                        <input
+                                            class="form-control w-100"
+                                            type="date"
+                                            name="dob"
+                                            value=""
+                                            placeholder="Enter Value"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-lg-3">
+                                        <label class="mb-lg-1" for="idCode">Identification Code</label>
+                                        <input
+                                            class="form-control w-100"
+                                            type="number"
+                                            name="idCode"
+                                            placeholder="Enter Value"
+                                            value=""
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-lg-3">
+                                        <label class="mb-lg-1" for="phone">Phone number</label>
+                                        <input
+                                            class="form-control w-100"
+                                            type="text"
+                                            name="phone"
+                                            placeholder="Enter Value"
+                                            value=""
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-lg-3"></div>   
+                                        <label class="mb-lg-1" for="address">Address</label>
+                                        <input
+                                            class="form-control w-100"
+                                            type="text"
+                                            name="address"
+                                            placeholder="Enter Value"
+                                               value=""
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-success" type="submit">Submit form</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="col">
-                            <div class="mb-lg-3">
-                                <label class="mb-lg-1" for="email">Email</label>
-                                <input
-                                    class="form-control w-100"
-                                    type="text"
-                                    name=""
-                                    placeholder="Enter Value"
-                                    value=""
-                                    required
-                                />
-                            </div>
-                            <div class="mb-lg-3">
-                                <label class="mb-lg-1" for="phone"
-                                    >Phone number</label
-                                >
-                                <input
-                                    class="form-control w-100"
-                                    type="text"
-                                    name="phone"
-                                    placeholder="Enter Value"
-                                    value=""
-                                    required
-                                />
-                            </div>
-                            <div class="mb-lg-3"></div>   
-                                <label class="mb-lg-1" for="address"
-                                    >Address</label
-                                >
-                                <input
-                                    class="form-control w-100"
-                                    type="text"
-                                    name="address"
-                                    placeholder="Enter Value"
-                                    value=""
-                                    required
-                                />
-                            </div>
-                        </div>
-                        <div class="mb-lg-3">
-                                <label for="idImg">Take 2 photos of both side and upload!</label>
-                                <input type="file" multiple="true" accept="image/*" id=finput onchange="upload()" name="idImg" placeholder="img"/>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-success" type="submit">Submit form</button>
-                            </div>
-                    </form>
-                    <!-- </div> -->
+                    </div>
                 </div>
             </div>
         </main>
 
         <!-- Footer -->
-        <div class="container-fluid block__backgorund">
+        <div class="container-fluid" style="background: #152534">
             <footer class="px-5 py-4">
                 <div class="row">
                     <div class="col-sm-3">
-                        <h3 class="title__background-color">About us</h3>
+                        <h3 class="text-light">About us</h3>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
                                 <a href="#" class="nav-link p-0 text-muted"
@@ -249,7 +271,7 @@
                     </div>
 
                     <div class="col-sm-3">
-                        <h3 class="title__background-color">Buy and Sell</h3>
+                        <h3 class="text-light">Buy and Sell</h3>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
                                 <a href="#" class="nav-link p-0 text-muted"
@@ -275,7 +297,7 @@
                     </div>
 
                     <div class="col-sm-3">
-                        <h3 class="title__background-color">Our Policies</h3>
+                        <h3 class="text-light">Our Policies</h3>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
                                 <a href="#" class="nav-link p-0 text-muted"
@@ -288,7 +310,7 @@
                                 >
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0 text-muted"
+                                <a href="#" class="nav-link p-0"
                                     >Term of Order</a
                                 >
                             </li>
@@ -304,7 +326,7 @@
                                 height="50"
                             />
                         </div>
-                        <p class="title__background-color">
+                        <p class="text-light">
                             Curious about new developments and updates? Follow
                             our social media.
                         </p>
@@ -342,7 +364,6 @@
                 </div>
             </footer>
         </div>
-        <script src="../assets/dist/js/bootstrap.bundle.min.js">
-        </script>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
