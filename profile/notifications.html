@@ -25,8 +25,13 @@
                     font-size: 3.5rem;
                 }
             }
+            .sidebar__item:hover {
+                background-color: #c0e862;
+            }
+            .sidebar__item-isActive {
+                background-color: #c0e862;
+            }
         </style>
-        <!-- <link href="editProfile.css" rel="stylesheet" /> -->
     </head>
 
     <body>
@@ -112,10 +117,12 @@
         </nav>
 
         <!-- Content -->
-        <main class="container">
-            <div class="pt-5 pb-5 rounded">
+        <main class="container my-5">
+            <div class="p-3 rounded">
                 <div class="d-flex flex-row">
-                    <div class="d-flex flex-column flex-shrink-0 p-3 text-dark text-center">
+                    <div
+                        class="d-flex flex-column flex-shrink-0 p-3 text-dark text-center"
+                    >
                         <img
                             src="/assets/img/avatar.png"
                             alt=""
@@ -131,11 +138,10 @@
                         style="border-right: 2px solid #e8eaee66"
                     >
                         <ul class="nav nav-pills flex-column mb-5">
-                            <li class="nav-item mb-4">
+                            <li class="nav-item mb-4 si">
                                 <a
                                     href="user.html"
-                                    class="nav-link text-dark"
-                                    aria-current="page"
+                                    class="nav-link text-dark sidebar__item"
                                 >
                                     Edit Profile
                                 </a>
@@ -143,28 +149,39 @@
                             <li class="mb-4">
                                 <a
                                     href="notifications.html"
-                                    class="nav-link text-dark"
+                                    class="nav-link text-dark sidebar__item sidebar__item-isActive"
                                 >
                                     Notifications
                                 </a>
                             </li>
                             <li class="mb-4">
-                                <a href="plan.html" class="nav-link text-dark">
+                                <a
+                                    href="plan.html"
+                                    class="nav-link text-dark sidebar__item"
+                                >
                                     Choose Plan
                                 </a>
                             </li>
                             <li class="mb-4">
                                 <a
                                     href="security.html"
-                                    class="nav-link text-dark"
+                                    class="nav-link text-dark sidebar__item"
                                 >
                                     Password & Security
                                 </a>
                             </li>
+                            <li class="nav-item mb-4 si">
+                                <a
+                                    href="voucher.html"
+                                    class="nav-link text-dark sidebar__item"
+                                >
+                                    Voucher
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="container-fluid d-flex flex-column px-5 text-dark">
-                        <h3 class="mb-5">Notifications</h3>
+                    <!-- <div class="container-fluid d-flex flex-column px-5 text-dark">
+                        <h3 class="mb-5">Edit Profile</h3>
                         <div>
                             <h5>Personal</h5>
                             <form class="row">
@@ -239,13 +256,12 @@
                                             required
                                         />
                                     </div>
-                                </div>
                                 <div>
                                     <button class="btn btn-outline-success" type="submit">Submit form</button>
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </main>
@@ -364,6 +380,6 @@
                 </div>
             </footer>
         </div>
-        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script></script>
     </body>
 </html>

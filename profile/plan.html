@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Template</title>
+        <!-- Bootstrap core CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -23,6 +24,12 @@
                 .bd-placeholder-img-lg {
                     font-size: 3.5rem;
                 }
+            }
+            .sidebar__item:hover {
+                background-color: #c0e862;
+            }
+            .sidebar__item-isActive {
+                background-color: #c0e862;
             }
         </style>
     </head>
@@ -110,8 +117,8 @@
         </nav>
 
         <!-- Content -->
-        <main class="container">
-            <div class="pt-5 pb-5 rounded">
+        <main class="container my-5">
+            <div class="p-3 rounded">
                 <div class="d-flex flex-row">
                     <div
                         class="d-flex flex-column flex-shrink-0 p-3 text-dark text-center"
@@ -131,11 +138,10 @@
                         style="border-right: 2px solid #e8eaee66"
                     >
                         <ul class="nav nav-pills flex-column mb-5">
-                            <li class="nav-item mb-4">
+                            <li class="nav-item mb-4 si">
                                 <a
                                     href="user.html"
-                                    class="nav-link text-dark"
-                                    aria-current="page"
+                                    class="nav-link text-dark sidebar__item"
                                 >
                                     Edit Profile
                                 </a>
@@ -143,22 +149,33 @@
                             <li class="mb-4">
                                 <a
                                     href="notifications.html"
-                                    class="nav-link text-dark"
+                                    class="nav-link text-dark sidebar__item"
                                 >
                                     Notifications
                                 </a>
                             </li>
                             <li class="mb-4">
-                                <a href="plan.html" class="nav-link text-dark">
+                                <a
+                                    href="plan.html"
+                                    class="nav-link text-dark sidebar__item sidebar__item-isActive"
+                                >
                                     Choose Plan
                                 </a>
                             </li>
                             <li class="mb-4">
                                 <a
                                     href="security.html"
-                                    class="nav-link text-dark"
+                                    class="nav-link text-dark sidebar__item"
                                 >
                                     Password & Security
+                                </a>
+                            </li>
+                            <li class="nav-item mb-4 si">
+                                <a
+                                    href="voucher.html"
+                                    class="nav-link text-dark sidebar__item"
+                                >
+                                    Voucher
                                 </a>
                             </li>
                         </ul>
@@ -184,9 +201,9 @@
                                             >
                                         </h1>
                                         <ul class="list-unstyled mt-3 mb-4">
-                                            <li>10 users included</li>
-                                            <li>2 GB of storage</li>
-                                            <li>Email support</li>
+                                            <li>something</li>
+                                            <li>something</li>
+                                            <li>something something</li>
                                             <li>Help center access</li>
                                         </ul>
                                         <button
@@ -213,9 +230,11 @@
                                             >
                                         </h1>
                                         <ul class="list-unstyled mt-3 mb-4">
-                                            <li>20 users included</li>
-                                            <li>10 GB of storage</li>
-                                            <li>Priority email support</li>
+                                            <li>something</li>
+                                            <li>
+                                                something somethingsomething
+                                            </li>
+                                            <li>something</li>
                                             <li>Help center access</li>
                                         </ul>
                                         <button
@@ -244,8 +263,8 @@
                                             >
                                         </h1>
                                         <ul class="list-unstyled mt-3 mb-4">
-                                            <li>20 users included</li>
-                                            <li>10 GB of storage</li>
+                                            <li>somethingsomething</li>
+                                            <li>something</li>
                                             <li>Priority email support</li>
                                             <li>Help center access</li>
                                         </ul>
@@ -550,6 +569,6 @@
                 </div>
             </footer>
         </div>
-        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script></script>
     </body>
 </html>

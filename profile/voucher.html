@@ -31,6 +31,20 @@
             .sidebar__item-isActive {
                 background-color: #c0e862;
             }
+            .voucher__title {
+                position: relative;
+                text-align: center;
+                border-right: 2px dashed #dadde6;
+            }
+            .voucher__title span {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
         </style>
     </head>
 
@@ -165,7 +179,7 @@
                             <li class="mb-4">
                                 <a
                                     href="security.html"
-                                    class="nav-link text-dark sidebar__item sidebar__item-isActive"
+                                    class="nav-link text-dark sidebar__item"
                                 >
                                     Password & Security
                                 </a>
@@ -173,7 +187,7 @@
                             <li class="nav-item mb-4 si">
                                 <a
                                     href="voucher.html"
-                                    class="nav-link text-dark sidebar__item"
+                                    class="nav-link text-dark sidebar__item sidebar__item-isActive"
                                 >
                                     Voucher
                                 </a>
@@ -183,81 +197,123 @@
                     <div
                         class="container-fluid d-flex flex-column px-5 text-dark"
                     >
-                        <h3 class="mb-5">Password & Security</h3>
+                        <h3 class="mb-5">Voucher Store</h3>
                         <div class="row">
-                            <form class="col">
-                                <h5 class="mb-3">Change Password</h5>
-                                <div class="col">
-                                    <div class="mb-lg-3">
-                                        <label class="mb-lg-1" for="dob"
-                                            >Current Password</label
-                                        >
-                                        <input
-                                            class="form-control w-100"
-                                            type="password"
-                                            name="dob"
-                                            value=""
-                                            placeholder="Enter Value"
-                                            required
-                                        />
+                            <div class="col-md-6">
+                                <div
+                                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                                >
+                                    <div class="col-3 voucher__title">
+                                        <span>Shipping Code</span>
                                     </div>
-                                    <div class="mb-lg-3">
-                                        <label class="mb-lg-1" for="idCode"
-                                            >New Password</label
-                                        >
-                                        <input
-                                            class="form-control w-100"
-                                            type="password"
-                                            name="idCode"
-                                            placeholder="Enter Value"
-                                            value=""
-                                            required
-                                        />
-                                    </div>
-                                    <div class="mb-lg-3">
-                                        <label class="mb-lg-1" for="dob"
-                                            >Retype new Password</label
-                                        >
-                                        <input
-                                            class="form-control w-100"
-                                            type="password"
-                                            name="dob"
-                                            value=""
-                                            placeholder="Enter Value"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <button
-                                        class="btn btn-outline-success"
-                                        type="submit"
+                                    <div
+                                        class="col p-4 d-flex flex-column position-static"
                                     >
-                                        Submit form
-                                    </button>
-                                </div>
-                            </form>
-
-                            <form class="col">
-                                <h5 class="mb-3">Delete your account</h5>
-                                <div class="col">
-                                    <label class="mb-lg-3" for="delete"
-                                        >When you delete your account, your
-                                        profile, photos, videos, comments, likes
-                                        and followers will be permanently
-                                        removed.
-                                    </label>
-                                    <div>
-                                        <button
-                                            class="btn btn-outline-danger"
-                                            type="submit"
-                                        >
-                                            Delete account
-                                        </button>
+                                        <h3 class="mb-0">Free Ship</h3>
+                                        <!-- <div class="mb-0 text-body-secondary">
+                                            FS2FAS89
+                                        </div> -->
+                                        <p class="card-text mb-auto">
+                                            17 JUL - 20 JUL
+                                        </p>
+                                        <p class="card-text">
+                                            Free shipping for your order
+                                        </p>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                                >
+                                    <div class="col-3 voucher__title">
+                                        <span>Shopping Code</span>
+                                    </div>
+                                    <div
+                                        class="col p-4 d-flex flex-column position-static"
+                                    >
+                                        <h3 class="mb-0">150.000 vnd</h3>
+                                        <!-- <div class="mb-0 text-body-secondary">
+                                            DS4KH19F
+                                        </div> -->
+                                        <p class="card-text mb-auto">
+                                            17 AUG - 20 AUG
+                                        </p>
+                                        <p class="card-text">
+                                            150k off your total order value
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                                >
+                                    <div class="col-3 voucher__title">
+                                        <span>Shipping Code</span>
+                                    </div>
+                                    <div
+                                        class="col p-4 d-flex flex-column position-static"
+                                    >
+                                        <h3 class="mb-0">50% Discount</h3>
+                                        <!-- <div class="mb-0 text-body-secondary">
+                                            DS4KH19F
+                                        </div> -->
+                                        <p class="card-text mb-auto">
+                                            17 JUL - 20 JUL
+                                        </p>
+                                        <p class="card-text">
+                                            50% off shipping on your order
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                                >
+                                    <div class="col-3 voucher__title">
+                                        <span>Shopping Code</span>
+                                    </div>
+                                    <div
+                                        class="col p-4 d-flex flex-column position-static"
+                                    >
+                                        <h3 class="mb-0">15% Discount</h3>
+                                        <!-- <div class="mb-0 text-body-secondary">
+                                            DS4KH19F
+                                        </div> -->
+                                        <p class="card-text mb-auto">
+                                            17 AUG - 20 AUG
+                                        </p>
+                                        <p class="card-text">
+                                            15% off your total order value
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div
+                                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                                >
+                                    <div class="col-3 voucher__title">
+                                        <span>Shopping Code</span>
+                                    </div>
+                                    <div
+                                        class="col p-4 d-flex flex-column position-static"
+                                    >
+                                        <h3 class="mb-0">150.000 vnd</h3>
+                                        <!-- <div class="mb-0 text-body-secondary">
+                                            DS4KH19F
+                                        </div> -->
+                                        <p class="card-text mb-auto">
+                                            17 AUG - 20 AUG
+                                        </p>
+                                        <p class="card-text">
+                                            150k off your total order value
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -30,7 +30,8 @@
                 background: #152534;
             }
         </style>
-        <link href="editProfile.css" rel="stylesheet" />
+        <link href="seller.css" rel="stylesheet" />
+        <script language="javascript" src="seller.js"></script>
     </head>
 
     <body>
@@ -113,7 +114,7 @@
         </nav>
 
         <!-- Content -->
-        <main class="container">
+        <main class="container my-5">
             <div class="p-sm-5">
                 <div class="d-flex flex-column">
                     <h3 class="mb-5">Edit Profile for Seller</h3>
@@ -187,9 +188,20 @@
                                 />
                             </div>
                         </div>
-                        <div class="mb-lg-3">
-                            <label for="idImg">Take 2 photos of both side and upload!</label>
-                            <input type="file" multiple="true" accept="image/*" id=finput onchange="upload()" name="idImg" placeholder="img"/>
+                        <div class="row">
+                            <div>Take 2 photos of both side of identification card and upload!</div>
+                            <div class="col mb-lg-3">
+                                <input type="file"  accept="image/*" name="idCardFront" id="filefront" style="display: none;" onchange="loadFrontImg(event)">
+                                <label for="filefront" >Upload Front Image</label>
+                                    <!-- <img id="front" title="img"/> -->
+                                <div class="image-area mt-4"><img id="front" src="#" alt="" class="img-fluid rounded"></div>
+                            </div>
+                            <div class="col">
+                                <input type="file"  accept="image/*" name="idCardBack" id="fileback" style="display: none;" onchange="loadBackImg(event)">
+                                <label for="fileback" >Upload Back Image</label>
+                                    <!-- <img id="front" title="img"/> -->
+                                <div class="image-area mt-4"><img id="back" src="#" alt="" class="img-fluid rounded"></div>
+                            </div>
                         </div>
                         <div>
                             <button class="btn btn-outline-success" type="submit">Submit form</button>
@@ -313,6 +325,15 @@
                 </div>
             </footer>
         </div>
-        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <Script>
+            var loadFrontImg = function (event) {
+                var imageFront = document.getElementById("front");
+                imageFront.src = URL.createObjectURL(event.target.files[0]);
+            };
+            var loadBackImg = function (event) {
+                var image = document.getElementById("back");
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+        </Script>
     </body>
 </html>
